@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "ingame-executor",
+	"version": "${version}",
+	"name": "Ingame Executor",
+	"description": "run code inside minecraft - python java c++ lua support",
+	"authors": [
+		"zerrissenheit"
+	],
+	"license": "LicenseRef-Proprietary",
+	"icon": "assets/template-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.zerrissenheit.executor.IngameExecutor"
+		],
+		"client": [
+			"me.zerrissenheit.executor.client.TemplateModClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
